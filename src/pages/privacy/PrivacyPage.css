@@ -1,0 +1,110 @@
+.privacy-page {
+  background-color: var(--background-color);
+  padding: var(--spacing-xl) 0;
+  min-height: 100vh;
+}
+
+.privacy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-xl);
+}
+
+.privacy-content h1 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  font-size: 2.5rem;
+}
+
+.last-updated {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-xl);
+  font-style: italic;
+}
+
+.privacy-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.privacy-section h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+}
+
+.privacy-section h3 {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+}
+
+.privacy-section p {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.privacy-section ul {
+  list-style-type: disc;
+  margin-left: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.privacy-section li {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+.privacy-footer {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 2px solid var(--border-color);
+  text-align: center;
+  color: var(--text-light);
+}
+
+.privacy-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.privacy-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .privacy-page {
+    padding: 0;
+  }
+
+  .privacy-content {
+    border-radius: 0;
+    box-shadow: none;
+    padding: var(--spacing-lg);
+  }
+
+  .privacy-content h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .privacy-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .privacy-section ul {
+    margin-left: var(--spacing-lg);
+  }
+} 

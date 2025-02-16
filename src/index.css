@@ -1,0 +1,24 @@
+:root {
+  /* Cores Principais */
+  --primary-color: #3498db;       /* Azul principal (botões, destaques) */
+  --secondary-color: #2c3e50;     /* Texto escuro */
+  --hover: #2980b9;       /* Azul hover */
+  --light-text: #7f8c8d;          /* Texto cinza */
+  --textos: #fff;          /* Fundo branco */
+  --background: #ffffff;          /* Fundo branco */
+  --background-cards: #fafafa;          /* Fundo branco */
+  --background-locations: #e8f4fc;          /* Fundo branco */
+  --background-jobtype: #e8f6e8;          /* Fundo branco */
+  --danger-color: #e74c3c;        /* Vermelho para ações destrutivas */
+  --success-color: #27ae60;       /* Verde para confirmações */
+  --border-color: #ecf0f1;        /* Bordas claras */
+  --shadow-color: rgba(0, 0, 0, .1) 0px 0px 10px 3px; /* Sombras */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}

@@ -1,0 +1,114 @@
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%; /* Permite que o contêiner ocupe toda a largura disponível */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+}
+
+.icon {
+  color: var(--light-text);
+  font-size: 1.2rem;
+}
+
+.search-input {
+  width: 100%; /* Ajusta para 100% da largura disponível */
+  padding: 10px 15px 10px 35px; /* Espaço para o ícone */
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: var(--light-text);
+}
+
+.search-input:focus {
+  border-color: var(--hover);
+}
+
+.search-input:hover {
+  border-color: var(--hover);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%; /* Garante que ocupe toda a largura em telas pequenas */
+  }
+
+  .search-input {
+    padding: 10px 15px 10px 30px; /* Ajuste para o ícone */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte em telas pequenas */
+  }
+
+  .icon {
+    font-size: 1rem; /* Reduz o tamanho do ícone */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    padding: 10px 12px 10px 30px; /* Ajuste o padding em telas muito pequenas */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte ainda mais */
+  }
+}
+
+.search-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--spacing-md);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  font-size: 1.2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) calc(var(--spacing-md) * 3);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-md);
+  color: var(--text-color);
+  background-color: var(--white);
+  transition: all var(--transition-fast);
+}
+
+.search-input::placeholder {
+  color: var(--text-light);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.1);
+}
+
+.search-input:focus + .search-icon {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) calc(var(--spacing-sm) * 4);
+    font-size: var(--font-size-sm);
+  }
+
+  .search-icon {
+    left: var(--spacing-sm);
+    font-size: 1rem;
+  }
+}

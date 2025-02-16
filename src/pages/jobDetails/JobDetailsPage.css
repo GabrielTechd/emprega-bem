@@ -1,0 +1,219 @@
+.job-details-page {
+  padding: var(--spacing-lg) 0;
+}
+
+.not-found {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.job-header {
+  background-color: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: var(--border-radius-sm);
+}
+
+.company-logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: var(--border-radius-sm);
+}
+
+.company-info h1 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.company-info h2 {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.job-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-light);
+}
+
+.meta-item svg {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-md);
+}
+
+.job-content {
+  background-color: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.job-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.job-section:last-child {
+  margin-bottom: 0;
+}
+
+.job-section h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.3rem;
+}
+
+.job-description {
+  color: var(--text-color);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.requirements-list,
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.requirements-list li,
+.benefits-list li {
+  position: relative;
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-color);
+}
+
+.requirements-list li::before,
+.benefits-list li::before {
+  content: '•';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.company-description {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.similar-jobs {
+  background-color: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.similar-jobs h3 {
+  color: var(--text-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.similar-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.similar-job-card {
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.similar-job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+.similar-job-card h4 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-md);
+}
+
+.similar-job-card p {
+  color: var(--text-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.similar-job-card span {
+  color: var(--text-light);
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+  .job-header {
+    padding: var(--spacing-lg);
+  }
+
+  .company-info {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+
+  .job-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .job-content,
+  .similar-jobs {
+    padding: var(--spacing-lg);
+  }
+
+  .similar-jobs-grid {
+    grid-template-columns: 1fr;
+  }
+} 

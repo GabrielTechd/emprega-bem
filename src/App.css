@@ -1,0 +1,86 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que ocupe toda a tela */
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1600px;
+  margin: 1rem auto;
+  padding: 0 20px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Tornando a grade responsiva */
+.jobs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Ajusta automaticamente */
+  gap: 1.5rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  .jobs-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .jobs-list {
+    grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
+  }
+}
+
+.search-and-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+  .search-and-filter {
+    flex-direction: column; /* Empilha os elementos */
+    align-items: stretch;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--textos);
+  background-color: var(--primary-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background-color: var(--hover);
+}
+
+.pagination .active a {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
